@@ -172,22 +172,7 @@ class PresfMyvindulaView(CommentView):
 
         return ModelsFuncDetails().get_FuncDetails(user_id)
     
-    def get_photo_user(self,prefs_user):
-        if prefs_user:
-            if prefs_user.photograph is not None and \
-                not ' ' in prefs_user.photograph  and \
-                not prefs_user.photograph == '':
-                #return self.context.absolute_url()+'/'+prefs_user.photograph #+ '/image_thumb'
-                return BaseFunc().get_imageVindulaUser(prefs_user.photograph)
-            
-            else:
-                return self.context.absolute_url()+'/defaultUser.png'
-        else:
-            return self.context.absolute_url()+'/defaultUser.png'
-
-
-
-
+   
 class RecentConversationsView(CommentViewableView):
     """Find recent conversations
     """

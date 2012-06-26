@@ -38,6 +38,3 @@ class ICommentView(Interface):
 
     def get_prefs_user():
         ''' return myvindula view '''
-
-    def get_photo_user():
-        ''' return myvindula view '''

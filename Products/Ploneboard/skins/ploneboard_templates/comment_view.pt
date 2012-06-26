@@ -111,9 +111,8 @@
                     
                      <img src="defaultUser.png"
 			             		 alt="" border="0"
-		                         width="75" 
-		                         height="100" 
-			             		 tal:attributes="src python:view_comment.get_photo_user(user_comment);
+		                         width="75px" 
+    		             		 tal:attributes="src string:${here/portal_url}/user-image?username=${user_comment/username|nothing};
 						 						 alt user_comment/name|nothing;
 												 title user_comment/name|nothing;" />
 
