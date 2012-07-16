@@ -102,9 +102,17 @@
               
               <tal:block define="view_comment context/@@Myvindulacomment_view;
               					 x python: unicode(creator,'utf-8');
-              					 user_comment python:view_comment.get_prefs_user(x);"> 
+              					 user_comment python:view_comment.get_prefs_user(x);">
+			   
                 <div class="commentPortrait">
-                  <a href="" title="View profile"                 
+                    <!-- Dados para utilização da macro -->                                  
+                    <tal:def define="size_img string:75px;
+                                     user_profiles x;
+                                     item user_comment;">
+                        <metal:use use-macro="context/myvindula-imageprofiles-macro/macros/userimage"/>       
+                    </tal:def>
+                    
+                  <!--a href="" title="View profile"                 
                      tal:attributes="href string:${here/portal_url}/myvindulalistuser?user=${user_comment/username|nothing}"
                      i18n:attributes="title"
                      tal:omit-tag="python:creator=='Anonymous'">
@@ -116,12 +124,10 @@
 						 						 alt user_comment/name|nothing;
 												 title user_comment/name|nothing;" />
 
-                  </a>
+                  </a-->
                 </div>
               </tal:block>
 
-              
-              
 
               <div class="boardCommentContent" 
                    tal:content="structure comment/getText">
