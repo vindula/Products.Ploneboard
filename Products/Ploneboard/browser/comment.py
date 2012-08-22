@@ -12,7 +12,7 @@ from Products.Ploneboard.browser.utils import toPloneboardTime
 from Products.Ploneboard.utils import PloneboardMessageFactory as _
 
 
-from vindula.myvindula.user import BaseFunc, ModelsFuncDetails
+from vindula.myvindula.user import BaseFunc
 import datetime
 from datetime import datetime as hora
 
@@ -158,19 +158,19 @@ class ConversationView(CommentView):
         return [self._buildDict(ob) for ob in self.context.getComments(limit=limit, offset=offset)]
 
 
-class PresfMyvindulaView(CommentView):
+class PresfMyvindulaView(CommentView,BaseFunc):
     """A view component for querying myvindula.
     """
 
     interface.implements(IConversationView)
 
-    def get_prefs_user(self, user):
-        try:
-            user_id = unicode(user, 'utf-8')    
-        except:
-            user_id = user 
-
-        return ModelsFuncDetails().get_FuncDetails(user_id)
+#    def get_prefs_user(self, user):
+#        try:
+#            user_id = unicode(user, 'utf-8')    
+#        except:
+#            user_id = user 
+#
+#        return ModelsFuncDetails().get_FuncDetails(user_id)
     
    
 class RecentConversationsView(CommentViewableView):
