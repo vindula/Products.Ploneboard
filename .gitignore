@@ -28,3 +28,10 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+<<<<<<< HEAD
+=======
+*.pyc
+*.pyo
+*.mo
+/*.egg-info
+>>>>>>> e0eded9c2f11583880068e51b0844c6d65604226
