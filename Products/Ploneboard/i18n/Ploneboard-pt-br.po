@@ -21,7 +21,7 @@ msgstr ""
 #: ../skins/ploneboard_scripts/validate_add_comment.vpy:43
 #: ../skins/ploneboard_scripts/validate_add_conversation.vpy:43
 msgid "Attachment is too large"
-msgstr "O apego é muito grande"
+msgstr "O anexo é muito grande"
 
 #: ../skins/ploneboard_templates/add_comment_form.cpt:168
 #: ../skins/ploneboard_templates/add_comment_preview.cpt:85
