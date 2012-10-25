@@ -5,7 +5,8 @@
  <property name="title">Message Board</property>
  <property
     name="description" 
-    i18n:translate="">Ploneboard is the outmost board object, what shows up in your site.</property>
+    i18n:translate=""> O Ploneboard é o objeto de fórum que será apresentado em seu site.</property>
+    
  <property name="content_icon">ploneboard_icon.gif</property>
  <property name="content_meta_type">Ploneboard</property>
  <property name="product">Ploneboard</property>

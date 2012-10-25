@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <object name="PloneboardForum" meta_type="Factory-based Type Information"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title">Forum</property>
+ <property name="title">Fórum</property>
  <property name="description"
-           i18n:translate="">A Forum contains conversations.</property>
+           i18n:translate="">Adicionar tópico de discurssão no fórum</property>
  <property name="content_icon">ploneboard_forum_icon.gif</property>
  <property name="content_meta_type">PloneboardForum</property>
  <property name="product">Ploneboard</property>

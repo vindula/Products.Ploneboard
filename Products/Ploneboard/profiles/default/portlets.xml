@@ -2,7 +2,7 @@
 <portlets>
   <portlet
       addview="ploneboard.RecentConversations"
-      title="Recent Ploneboard conversations"
+      title="Conversas Recentes do Fórum"
       description="A portlet which shows an overview of all recently updated conversations"
       />
         

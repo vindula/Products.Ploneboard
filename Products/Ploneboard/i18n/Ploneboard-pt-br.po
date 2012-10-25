@@ -444,6 +444,14 @@ msgstr "Tópicos recentes em ${title}"
 msgid "title_title"
 msgstr "Título do portlet"
 
+#: ../portlet/recent.py:36
+msgid "title_forum"
+msgstr "Selecione o Quadro de Mensagens ou Fórum"
+
+#: ../portlet/recent.py:37
+msgid "help_forum"
+msgstr "Selecione as conversas recentes de um fórum específico"
+
 #: ../skins/ploneboard_templates/ploneboard_unanswered.pt:26
 msgid "title_unanswered_conversations"
 msgstr "Tópicos não respondidos em ${title}"
@@ -451,4 +459,6 @@ msgstr "Tópicos não respondidos em ${title}"
 #: ../skins/ploneboard_templates/ploneboard_unanswered.pt:48
 msgid "unanswered_conversations_description"
 msgstr "As conversas que se seguem foram publicadas, mas ainda não recebeu qualquer resposta."
+
+
 

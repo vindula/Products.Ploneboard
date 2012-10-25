@@ -34,7 +34,7 @@
            class="link-parent"
            tal:attributes="href context/absolute_url"
            i18n:translate="go_to_view_url">
-           Return to <span i18n:name="name" tal:content="context/Title" />
+           Retornar para <span i18n:name="name" tal:content="context/Title" />
         </a>
 
         <div tal:replace="structure provider:plone.abovecontentbody" />
@@ -42,13 +42,13 @@
         <p class="discreet"
              i18n:translate="no_recent_conversations"
              tal:condition="python:numConversations == 0">
-        No conversations found.
+        Conversas não encontradas.
         </p>
 
         <tal:haveConversations condition="python:numConversations > 0">
           
           <p i18n:translate="recent_conversations_description">
-            The following conversations have had recent activity.
+            Conversas que tiveram atividade recentemente
           </p>
           
           <p class="discreet" tal:condition="not:isAnon"
