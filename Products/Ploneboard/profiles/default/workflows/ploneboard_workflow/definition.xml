@@ -179,7 +179,7 @@
  <transition transition_id="hide" title="Hide message board"
              new_state="private" trigger="USER"
              before_script="" after_script="">
-  <action url="%(content_url)s/content_publish_form"
+  <action url="%(content_url)s/content_status_modify?workflow_action=hide"
           category="workflow">Hide</action>
   <guard>
    <guard-permission>Ploneboard: Add Forum</guard-permission>
@@ -188,7 +188,7 @@
  <transition transition_id="open" title="Open message board"
              new_state="published" trigger="USER"
              before_script="" after_script="">
-  <action url="%(content_url)s/content_publish_form"
+  <action url="%(content_url)s/content_status_modify?workflow_action=open"
           category="workflow">Open</action>
   <guard>
    <guard-permission>Ploneboard: Add Forum</guard-permission>
@@ -206,7 +206,7 @@
  <transition transition_id="unlock" title="Unlock message board"
              new_state="published" trigger="USER"
              before_script="" after_script="lock_or_unlock">
-  <action url="%(content_url)s/content_publish_form"
+  <action url="%(content_url)s/content_status_modify?workflow_action=unlock"
           category="workflow">Unlock</action>
   <guard>
    <guard-permission>Ploneboard: Manage Forum</guard-permission>
