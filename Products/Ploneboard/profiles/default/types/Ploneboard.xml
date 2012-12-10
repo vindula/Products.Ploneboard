@@ -2,7 +2,7 @@
 <object name="Ploneboard"
    meta_type="Factory-based Type Information with dynamic views"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title">Message Board</property>
+ <property name="title">Quadro de Mensagens</property>
  <property
     name="description" 
     i18n:translate=""> O Ploneboard é o objeto de fórum que será apresentado em seu site.</property>
