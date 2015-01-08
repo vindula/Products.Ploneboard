@@ -56,7 +56,7 @@
       <div tal:repeat="comment batch">
         <div tal:define="odd repeat/comment/odd;
         				 last repeat/comment/end;
-        				 
+
         				 temp_comment python:view.GetTimePost(comment)"
              tal:attributes="class python:(odd and 'odd' or 'even') + ' boardComment visualIEFloatFix'">
         <metal:comment metal:use-macro="here/comment_view/macros/comment" />
